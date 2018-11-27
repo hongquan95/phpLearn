@@ -1,4 +1,5 @@
 <?php
+
 require __DIR__ . '/vendor/autoload.php';
 
 #Psr_4
@@ -42,10 +43,26 @@ require __DIR__ . '/vendor/autoload.php';
 // $run = new RunSolid;
 // $run->run();
 
-#OOP Inherity
+#OOP Inherity Staregy DP
 
-use App\OOP\Inherity\Car;
+// use App\OOP\Inherity\Car;
 
-$car = new Car();
+// $car = new Car();
 
-$car->go();
+// $car->go();
+
+#Design Partterns
+#1 Decorator
+
+use App\DesignPartterns\Decorator\Computer;
+use App\DesignPartterns\Decorator\Disk;
+use App\DesignPartterns\Decorator\Monitor;
+
+$a = new Computer();
+echo $a->description() . PHP_EOL;
+
+$a = new Disk($a);
+echo $a->description() . PHP_EOL;
+
+$a = new Monitor($a);
+echo $a->description() . PHP_EOL;
