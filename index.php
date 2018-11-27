@@ -37,7 +37,15 @@ require __DIR__ . '/vendor/autoload.php';
 
 #SOLID
 
-use App\SOLID\RunSolid;
+// use App\SOLID\RunSolid;
 
-$run = new RunSolid;
-$run->run();
+// $run = new RunSolid;
+// $run->run();
+
+#OOP Inherity
+
+use App\OOP\Inherity\Car;
+
+$car = new Car();
+
+$car->go();
