@@ -72,22 +72,22 @@ require __DIR__ . '/vendor/autoload.php';
 // echo $secureConnection->description();
 
 #-----------------------------3. Observer----------------------------------
-use App\DesignPartterns\Observer\Database;
-use App\DesignPartterns\Observer\Archiver;
-use App\DesignPartterns\Observer\Boss;
-use App\DesignPartterns\Observer\Client;
+// use App\DesignPartterns\Observer\Database;
+// use App\DesignPartterns\Observer\Archiver;
+// use App\DesignPartterns\Observer\Boss;
+// use App\DesignPartterns\Observer\Client;
 
-$database = new Database();
-$archiver = new Archiver(); 
-$client = new Client();
-$boss = new Boss();
-var_dump($client, $client2); die();
-$database->registerObserver($archiver);
-$database->registerObserver($client);
-$database->registerObserver($boss);
-$database->editRecord('delete', 'record 1');
-$database->removeObserver($client);
-$database->editRecord('update', 'record 2');
+// $database = new Database();
+// $archiver = new Archiver(); 
+// $client = new Client();
+// $boss = new Boss();
+// var_dump($client, $client2); die();
+// $database->registerObserver($archiver);
+// $database->registerObserver($client);
+// $database->registerObserver($boss);
+// $database->editRecord('delete', 'record 1');
+// $database->removeObserver($client);
+// $database->editRecord('update', 'record 2');
 #-----------------------------4.Staregy (OOP Inherity )
 
 // use App\OOP\Inherity\Plane;
@@ -95,3 +95,8 @@ $database->editRecord('update', 'record 2');
 // $car = new Plane();
 
 // $car->go();
+
+#---------------------------5. ChainOfResponsibility------
+use App\DesignPartterns\ChainOfResponsibility\ChainOfResponsibility;
+$chain = new ChainOfResponsibility;
+$chain->run();
