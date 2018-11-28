@@ -7,7 +7,7 @@ use App\SOLID\Circle;
 use App\SOLID\AreaCalculator;
 use App\SOLID\VolumeCalculator;
 use App\SOLID\SumCalculatorOutputter;
-class RunSolid
+class Solid
 {
     public function run()
     {

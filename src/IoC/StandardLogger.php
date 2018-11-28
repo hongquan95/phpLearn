@@ -7,6 +7,6 @@ use App\Ioc\LoggerInterface;
 class StandardLogger implements LoggerInterface
 {
     public function info($message) {
-        echo 'Standard log message: ' . $message;
+        echo 'Standard log message: ' . $message . PHP_EOL;
     }
 }

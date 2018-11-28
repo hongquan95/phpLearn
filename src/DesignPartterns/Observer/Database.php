@@ -22,7 +22,6 @@ class Database implements SubjectInterface
     }
     public function removeObserver(ObserverInterface $observer)
     {
-        var_dump($this->observers[1] == $observer); die();
         foreach ($this->observers as $index => $item) {
             if ($item === $observer) {
                 unset($this->observers[$index]);
