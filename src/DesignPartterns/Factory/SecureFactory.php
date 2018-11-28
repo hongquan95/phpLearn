@@ -9,11 +9,11 @@ use App\DesignPartterns\Factory\ConnectionFactory;
 class SecureFactory extends ConnectionFactory
 {
     public function createConnection(string $type)
-        {
-            switch ($type) {
-                case 'Oracle': return new SecureOracleConnection();
-                case 'Mysql': return new SecureMySqlConnection();
-                default: return new SecureSqlServerConnection();
-            }
+    {
+        switch ($type) {
+            case 'Oracle': return new SecureOracleConnection();
+            case 'Mysql': return new SecureMySqlConnection();
+            default: return new SecureSqlServerConnection();
         }
+    }
 }

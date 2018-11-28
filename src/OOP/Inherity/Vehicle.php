@@ -21,4 +21,3 @@ abstract class Vehicle
         $this->goAlgorithm->go();
     }
 }
-
