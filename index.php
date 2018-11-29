@@ -56,3 +56,9 @@ require __DIR__ . '/vendor/autoload.php';
 // use App\DesignPartterns\ChainOfResponsibility\ChainOfResponsibility;
 // $chain = new ChainOfResponsibility;
 // $chain->run();
+
+#---------------------------6. Singleton -----------------
+
+use App\DesignPartterns\Singleton\Singleton;
+$singleton = new Singleton;
+$singleton->run();
