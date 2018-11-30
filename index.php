@@ -64,6 +64,11 @@ require __DIR__ . '/vendor/autoload.php';
 // $singleton->run();
 
 #---------------------------7. Adapter--------------------
-use App\DesignPartterns\Adapter\Adapter;
-$adapter = new Adapter;
-$adapter->run();
+// use App\DesignPartterns\Adapter\Adapter;
+// $singleton = new Adapter;
+// $singleton->run();
+
+#--------------------------8. Flyweight-------------------
+use App\DesignPartterns\Flyweight\Flyweight;
+$flyweight = new Flyweight;
+$flyweight->run();
