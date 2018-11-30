@@ -69,6 +69,14 @@ require __DIR__ . '/vendor/autoload.php';
 // $singleton->run();
 
 #--------------------------8. Flyweight-------------------
-use App\DesignPartterns\Flyweight\Flyweight;
-$flyweight = new Flyweight;
-$flyweight->run();
+
+// use App\DesignPartterns\Flyweight\Flyweight;
+// $flyweight = new Flyweight;
+// $flyweight->run();
+
+#--------------------------9. Facade-----------------------
+
+use App\DesignPartterns\Facade\Facade;
+
+$facade = new Facade;
+$facade->run();
