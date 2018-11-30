@@ -59,6 +59,11 @@ require __DIR__ . '/vendor/autoload.php';
 
 #---------------------------6. Singleton -----------------
 
-use App\DesignPartterns\Singleton\Singleton;
-$singleton = new Singleton;
-$singleton->run();
+// use App\DesignPartterns\Singleton\Singleton;
+// $singleton = new Singleton;
+// $singleton->run();
+
+#---------------------------7. Adapter--------------------
+use App\DesignPartterns\Adapter\Adapter;
+$adapter = new Adapter;
+$adapter->run();
