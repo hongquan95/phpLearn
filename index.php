@@ -76,7 +76,13 @@ require __DIR__ . '/vendor/autoload.php';
 
 #--------------------------9. Facade-----------------------
 
-use App\DesignPartterns\Facade\Facade;
+// use App\DesignPartterns\Facade\Facade;
 
-$facade = new Facade;
-$facade->run();
+// $facade = new Facade;
+// $facade->run();
+
+#--------------------------10. Template-------------------
+
+use App\DesignPartterns\Template\Template;
+$template = new Template;
+$template->run();
