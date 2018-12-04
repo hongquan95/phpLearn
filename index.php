@@ -89,8 +89,15 @@ require __DIR__ . '/vendor/autoload.php';
 
 #--------------------------11. Builder --------------------
 
-use App\DesignPartterns\Builder\Builder;
+// use App\DesignPartterns\Builder\Builder;
 
-$builder = new Builder;
-$builder->run();
+// $builder = new Builder;
+// $builder->run();
+
+#--------------------------12. Iterator --------------------
+
+use App\DesignPartterns\Iterator\Iterator;
+
+$iterator = new Iterator;
+$iterator->run();
 
