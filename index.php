@@ -83,6 +83,14 @@ require __DIR__ . '/vendor/autoload.php';
 
 #--------------------------10. Template-------------------
 
-use App\DesignPartterns\Template\Template;
-$template = new Template;
-$template->run();
+// use App\DesignPartterns\Template\Template;
+// $template = new Template;
+// $template->run();
+
+#--------------------------11. Builder --------------------
+
+use App\DesignPartterns\Builder\Builder;
+
+$builder = new Builder;
+$builder->run();
+
